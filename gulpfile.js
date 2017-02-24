@@ -1,7 +1,14 @@
-var gulp = required('gulp');
-var uglify = required('gulp-uglify');
-var uglify_css = required('gulp-uglifycss')
-var sass = required('gulp-ruby-sass')
+var gulp = require('gulp');
+var uglify = require('gulp-uglify');
+var uglify_css = require('gulp-uglifycss');
+var sass = require('gulp-sass');
+var pug = require('gulp-pug');
+
+gulp.task('views', function() {
+    gulp.src('pug/*.pug')
+    .pipe(pug())
+    .pipe(gulp.dest('./'))
+});
 
 gulp.task('script', function() {
   gulp.src('editor/*.js')
@@ -11,14 +18,19 @@ gulp.task('script', function() {
 
 gulp.task('style', function() {
   gulp.src('editor/*.css')
-  .pipe(uglifycss())
+  .pipe(uglify_css())
   .pipe(gulp.dest('master/style'))
 });
 
 gulp.task('Csass',function(){
-  gulp.src('editor/style/*.sass')
-  .pipe(sass())
-  .pipe(gulp.dest('editor'))
+    gulp.src('editor/main.sass')
+    .pipe(sass())
+    .pipe(gulp.dest('editor/css'));
+});
+
+gulp.task('watch',function() {
+    gulp.watch('pug/*.pug',['views'])
+    gulp.watch('editor/*.sass',['Csass'])
 });
 
 gulp.task('default',['script','Csass','style']);
