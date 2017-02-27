@@ -1,30 +1,69 @@
 body
+  font-family: 'Ubuntu', sans-serif
+  margin: 0px
+
+img
+  max-width: 100%
+
+.frame
   height: 100vh
-  //border: 2px solid black
   background:
     image: url(../../img/pexels.jpg)
     size: cover
-    position: center
+    position: top center
+    attachment: fixed
 
+  overflow: hidden
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
   text-align: center
-  font-family: 'Ubuntu', sans-serif
 
 .head_frame
   position: absolute
   width: 350px
   height: 416px
   top: 100px
-  left: 85px
+  left: 150px
   border:
     style: solid
     color: white
     width: 5px
     radius: 4px
   box-shadow: 20px 2px 30px rgba(0, 0, 0, 0.24)
+
+.para1
+  width: 960px
+  height: 733px
+  background:
+    image: url(../../img/laptop.png)
+    repeat: no-repeat
+    position: top left
+  position: absolute
+  margin-left: -195px
+  top: 0px
+
+.para2
+  width: 960px
+  height: 733px
+  background:
+    image: url(../../img/new.png)
+    repeat: no-repeat
+  position: absolute
+  margin-left: 4%
+  top: 122px
+
+.para3
+  width: 960px
+  height: 733px
+  background:
+    image: url(../../img/phone.png)
+    repeat: no-repeat
+  position: absolute
+  margin-left: 4%
+  top: 122px
+
 
 .text
   width: 310px
