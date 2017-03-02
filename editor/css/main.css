@@ -116,3 +116,7 @@ img {
   top: 300px;
   left: 506px;
   color: white; }
+
+section {
+  height: 500px;
+  width: auto; }
