@@ -17,4 +17,13 @@ $(window).scroll(function(){
   $('.para3').css({
     'transform':'translate(0px, -'+ wScroll /65 +'%)'
   });
+
+  if(wScroll > $('.lang').offset().top - ($(window).height() / 1.5)){
+    $('.lang .box').each(function(i){
+      setTimeout(function(){
+        $('.lang .box').eq(i).addClass('is_showing');
+      },(700 * (Math.exp(i * 0.14))) - 700);
+    });
+  }
+
 });

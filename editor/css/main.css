@@ -164,6 +164,7 @@ section {
   background-image: url(../../img/project4.PNG); }
 
 .lang {
+  position: relative;
   border: 5px solid black; }
   .lang .title {
     margin-left: -150px; }
@@ -188,3 +189,99 @@ section {
   height: 100px;
   margin-left: 5%;
   margin-top: 450px; }
+
+.job1 {
+  position: relative;
+  width: 200%;
+  height: 120px;
+  background-image: url(../../img/iyda.png);
+  background-repeat: no-repeat; }
+
+.job2 {
+  position: relative;
+  width: 215%;
+  height: 120px;
+  margin-left: -15px;
+  background-image: url(../../img/accenture.jpg);
+  background-repeat: no-repeat; }
+
+.desc {
+  line-height: 2px;
+  margin-top: -15px;
+  float: right; }
+
+.periscope {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 120px; }
+
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  cursor: pointer; }
+  .box.is_showing {
+    opacity: 1;
+    transform: translateX(0px); }
+
+#box1 {
+  background-image: url(../../img/python_.png); }
+
+#box2 {
+  background-image: url(../../img/c++.gif); }
+
+#box3 {
+  background-image: url(../../img/logo-javascript.svg); }
+
+#box4 {
+  background-image: url(../../img/html_5.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0px; }
+
+#box5 {
+  background-image: url(../../img/css3.png); }
+
+#box6 {
+  background-image: url(../../img/django.png);
+  background-repeat: no-repeat;
+  background-position: center 0px; }
+
+#box7 {
+  background-image: url(../../img/jquery.gif); }
+
+#box8 {
+  background-image: url(../../img/React-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 0px; }
+
+#box9 {
+  background-image: url(../../img/mongodb.png); }
+
+#box10 {
+  background-image: url(../../img/dbs_mysql.png); }
+
+#box11 {
+  background-image: url(../../img/sass.svg);
+  background-repeat: no-repeat;
+  background-position: center 0px; }
+
+#box12 {
+  background-image: url(../../img/pug.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0px; }
+
+#box13 {
+  background-image: url(../../img/gulp.png);
+  background-repeat: no-repeat;
+  background-position: center 0px; }
+
+#box14 {
+  background-image: url(../../img/Git_icon.svg.png); }
