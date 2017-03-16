@@ -22,7 +22,7 @@ img {
 
 .head_frame {
   position: absolute;
-  max-width: 350px;
+  max-width: 320px;
   max-height: 416px;
   top: 20%;
   margin-top: -70px;
@@ -119,14 +119,16 @@ img {
   top: 28%;
   margin-top: -110px;
   border-radius: 50%;
-  background-image: url("../../img/dp.JPG"); }
+  background-image: url("../../img/dp.JPG");
+  background-position: center 0px;
+  background-size: contain; }
 
 .intro {
   position: absolute;
-  width: 320px;
+  width: 200px;
   height: 100px;
   top: 240px;
-  left: -40px;
+  left: 10px;
   color: white;
   font-size: 30px; }
 
@@ -136,20 +138,21 @@ section {
   position: relative;
   z-index: 2; }
 
+.title {
+  width: 320px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -160px;
+  color: white;
+  font-size: 25px;
+  text-align: center; }
+
 .portfolio {
   position: relative;
   background-color: blue;
   background-repeat: no-repeat;
   background-attachment: fixed; }
-
-.title {
-  width: 400px;
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  margin-left: -70px;
-  color: white;
-  font-size: 25px; }
 
 #projects_club {
   width: 100%;
@@ -187,6 +190,7 @@ section {
   background-image: url(../../img/project4.PNG); }
 
 .lang {
+  width: auto;
   position: relative;
   border: 5px solid black;
   margin-bottom: 350px;
@@ -230,8 +234,7 @@ footer {
     line-height: 5px; }
 
 .email {
-  margin: 10px;
-  width: 90%;
+  width: 80%;
   height: 30%;
   line-height: 25px; }
 
@@ -242,12 +245,14 @@ footer {
 #comp1 {
   background-color: white;
   background-image: url(../../img/iyda.jpg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 #comp2 {
   background-color: white;
   background-image: url(../../img/accenture.jpg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .desc {
   line-height: 2px;
@@ -277,58 +282,72 @@ footer {
     transform: translateX(0px); }
 
 #box1 {
-  background-image: url(../../img/python_.png); }
+  background-image: url(../../img/python_.png);
+  background-size: contain; }
 
 #box2 {
-  background-image: url(../../img/c++.gif); }
+  background-image: url(../../img/c++.gif);
+  background-size: contain; }
 
 #box3 {
-  background-image: url(../../img/logo-javascript.svg); }
+  background-image: url(../../img/logo-javascript.svg);
+  background-size: contain; }
 
 #box4 {
   background-image: url(../../img/html_5.jpg);
   background-repeat: no-repeat;
-  background-position: center 0px; }
+  background-position: center 0px;
+  background-size: contain; }
 
 #box5 {
-  background-image: url(../../img/css3.png); }
+  background-image: url(../../img/css3.png);
+  background-size: contain; }
 
 #box6 {
   background-image: url(../../img/django.png);
   background-repeat: no-repeat;
-  background-position: center 0px; }
+  background-position: center 0px;
+  background-size: contain; }
 
 #box7 {
-  background-image: url(../../img/jquery.gif); }
+  background-image: url(../../img/jquery.gif);
+  background-size: contain; }
 
 #box8 {
   background-image: url(../../img/React-icon.svg);
   background-repeat: no-repeat;
-  background-position: center 0px; }
+  background-position: center 0px;
+  background-size: contain; }
 
 #box9 {
-  background-image: url(../../img/mongodb.png); }
+  background-image: url(../../img/mongodb.png);
+  background-size: contain; }
 
 #box10 {
-  background-image: url(../../img/dbs_mysql.png); }
+  background-image: url(../../img/dbs_mysql.png);
+  background-size: contain; }
 
 #box11 {
   background-image: url(../../img/sass.svg);
   background-repeat: no-repeat;
-  background-position: center 0px; }
+  background-position: center 0px;
+  background-size: contain; }
 
 #box12 {
   background-image: url(../../img/pug.jpg);
   background-repeat: no-repeat;
-  background-position: center 0px; }
+  background-position: center 0px;
+  background-size: contain; }
 
 #box13 {
   background-image: url(../../img/gulp.png);
   background-repeat: no-repeat;
-  background-position: center 0px; }
+  background-position: center 0px;
+  background-size: contain; }
 
 #box14 {
-  background-image: url(../../img/Git_icon.svg.png); }
+  background-image: url(../../img/Git_icon.svg.png);
+  background-size: contain; }
 
 @media screen and (max-width: 1279px) {
   .comp .text {
@@ -339,7 +358,7 @@ footer {
   .social_frame {
     top: 80%; }
   .dp {
-    left: 75%; }
+    left: 77%; }
   .para2 {
     left: -20%; } }
 
@@ -370,23 +389,84 @@ footer {
   .work {
     margin-left: 40%; }
   .worked_with {
-    margin-left: 10%;
-    margin-top: 10px;
-    width: 750vh;
+    margin-top: 60px;
+    margin-left: 0;
+    width: 320px;
+    left: 50%;
+    margin-left: -250px;
     height: 400px; }
-    .worked_with .comp .text {
-      margin-left: 10px;
-      padding: 0;
-      margin-top: 120px;
-      color: white; }
+    .worked_with .comp {
+      width: 320px;
+      margin-left: 0; }
+      .worked_with .comp .text {
+        margin-left: 10px;
+        padding: 0;
+        margin-top: 120px;
+        color: white; }
   .lang {
-    margin-bottom: 600px; }
+    margin-bottom: 0px; }
   footer {
-    height: 600px; }
+    position: relative;
+    height: auto; }
   .contact {
     width: 100vh; }
     .contact .email {
-      margin: 0;
-      margin-left: 10%; }
+      margin-left: 13%; }
       .contact .email a {
-        margin: 0 10%; } }
+        margin: 0 5%; } }
+
+@media screen and (max-width: 719px) {
+  .project {
+    margin: 5px; }
+  #projects_club {
+    margin-top: -50px; } }
+
+@media screen and (max-width: 703px) {
+  .portfolio {
+    height: 550px; } }
+
+@media screen and (max-width: 659px) {
+  .box {
+    width: 60px;
+    height: 60px; }
+  .portfolio {
+    height: 950px; } }
+
+@media screen and (max-width: 650px) {
+  .frame {
+    height: 900px; }
+  .dp {
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 150px;
+    margin-left: -75px; }
+  .head_frame {
+    left: 50%;
+    margin-left: -175px;
+    margin-top: 100px; }
+  .intro {
+    font-size: 16px;
+    top: 150px;
+    left: -30px; }
+  .social_frame {
+    left: 50%;
+    margin-left: -189px; }
+  .para2 {
+    margin-left: -20%;
+    bottom: -142px; }
+  .para3 {
+    margin-right: -5%;
+    bottom: -295px; } }
+
+@media screen and (max-width: 538px) {
+  .para2 {
+    margin-left: -28%; }
+  .para3 {
+    margin-right: -8%; } }
+
+@media screen and (max-width: 425px) {
+  .para2 {
+    margin-left: -40%; }
+  .para3 {
+    margin-right: -10%; } }

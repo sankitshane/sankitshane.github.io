@@ -26,7 +26,7 @@ img
 
 .head_frame
   position: absolute
-  max-width: 350px
+  max-width: 320px
   max-height: 416px
   top: 20%
   margin-top: -70px
@@ -141,13 +141,16 @@ img
   border-radius: 50%
   background:
     image: url("../../img/dp.JPG")
+    position: center 0px
+    size: contain
+
 
 .intro
   position: absolute
-  width: 320px
+  width: 200px
   height: 100px
   top: 240px
-  left: -40px
+  left: 10px
   color: white
   font-size: 30px
 
@@ -157,6 +160,17 @@ section
   position: relative
   z-index: 2
 
+.title
+  width: 320px
+  height: 100px
+  position: absolute
+  left: 50%
+  margin-left: -160px
+  color: white
+  font:
+    size: 25px
+  text-align: center
+
 .portfolio
   position: relative
   background:
@@ -164,15 +178,7 @@ section
     repeat: no-repeat
     attachment: fixed
 
-.title
-  width: 400px
-  height: 100px
-  position: absolute
-  left: 50%
-  margin-left: -70px
-  color: white
-  font:
-    size: 25px
+
 
 #projects_club
   width: 100%
@@ -214,6 +220,7 @@ section
     image: url(../../img/project4.PNG)
 
 .lang
+  width: auto
   position: relative
   border: 5px solid black
   .title
@@ -260,8 +267,7 @@ footer
     line-height: 5px
 
 .email
-  margin: 10px
-  width: 90%
+  width: 80%
   height: 30%
   line-height: 25px
 
@@ -275,12 +281,14 @@ footer
     color: white
     image: url(../../img/iyda.jpg)
     repeat: no-repeat
+    size: contain
 
 #comp2
   background:
     color: white
     image: url(../../img/accenture.jpg)
     repeat: no-repeat
+    size: contain
 
 .desc
   line-height: 2px
@@ -315,70 +323,73 @@ footer
 #box1
   background:
     image:url(../../img/python_.png)
+    size: contain
 
 
 #box2
   background:
     image:url(../../img/c++.gif)
-
+    size: contain
 #box3
   background:
     image:url(../../img/logo-javascript.svg)
-
+    size: contain
 #box4
   background:
     image:url(../../img/html_5.jpg)
     repeat: no-repeat
     position: center 0px
-
+    size: contain
 #box5
   background:
     image:url(../../img/css3.png)
-
+    size: contain
 #box6
   background:
     image:url(../../img/django.png)
     repeat: no-repeat
     position: center 0px
+    size: contain
 #box7
   background:
     image:url(../../img/jquery.gif)
-
+    size: contain
 #box8
   background:
     image:url(../../img/React-icon.svg)
     repeat: no-repeat
     position: center 0px
+    size: contain
 #box9
   background:
     image:url(../../img/mongodb.png)
-
+    size: contain
 #box10
   background:
     image:url(../../img/dbs_mysql.png)
-
+    size: contain
 #box11
   background:
     image:url(../../img/sass.svg)
     repeat: no-repeat
     position: center 0px
-
+    size: contain
 #box12
   background:
     image:url(../../img/pug.jpg)
     repeat: no-repeat
     position: center 0px
-
+    size: contain
 #box13
   background:
     image:url(../../img/gulp.png)
     repeat: no-repeat
     position: center 0px
-
+    size: contain
 #box14
   background:
     image:url(../../img/Git_icon.svg.png)
-
+    size: contain
 @media screen and (max-width:1279px)
   .comp
     .text
@@ -389,7 +400,7 @@ footer
   .social_frame
     top: 80%
   .dp
-    left: 75%
+    left: 77%
   .para2
     left: -20%
 
@@ -421,24 +432,84 @@ footer
   .work
     margin-left: 40%
   .worked_with
-    margin-left: 10%
-    margin-top: 10px
-    width: 750vh
+    margin-top: 60px
+    margin-left: 0
+    width: 320px
+    left: 50%
+    margin-left: -250px
     height: 400px
     .comp
+      width: 320px
+      margin-left: 0
       .text
         margin-left: 10px
         padding: 0
         margin-top: 120px
         color: white
   .lang
-    margin-bottom: 600px
+    margin-bottom: 0px
   footer
-    height: 600px
+    position: relative
+    height: auto
   .contact
     width: 100vh
     .email
-      margin: 0
-      margin-left: 10%
+      margin-left: 13%
       a
-        margin: 0 10%
+        margin: 0 5%
+
+@media screen and (max-width:719px)
+  .project
+    margin: 5px
+  #projects_club
+    margin-top: -50px
+
+@media screen and (max-width:703px)
+  .portfolio
+    height: 550px
+
+@media screen and (max-width:659px)
+  .box
+    width: 60px
+    height: 60px
+  .portfolio
+    height: 950px
+
+@media screen and (max-width:650px)
+  .frame
+    height: 900px
+  .dp
+    width: 150px
+    height: 150px
+    left: 50%
+    top: 150px
+    margin-left: -75px
+  .head_frame
+    left: 50%
+    margin-left: -175px
+    margin-top: 100px
+  .intro
+    font-size: 16px
+    top : 150px
+    left: -30px
+  .social_frame
+    left: 50%
+    margin-left: -189px
+  .para2
+    margin-left: -20%
+    bottom: -142px
+  .para3
+    margin-right: -5%
+    bottom: -295px
+
+@media screen and (max-width:538px)
+  .para2
+    margin-left: -28%
+  .para3
+    margin-right: -8%
+
+@media screen and (max-width:425px)
+  .para2
+    margin-left: -40%
+  .para3
+    margin-right: -10%
