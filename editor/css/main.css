@@ -119,7 +119,7 @@ img {
   top: 28%;
   margin-top: -110px;
   border-radius: 50%;
-  background-image: url("../../img/dp.JPG");
+  background-image: url("../../img/dp.jpg");
   background-position: center 0px;
   background-size: contain; }
 
@@ -150,7 +150,7 @@ section {
 
 .portfolio {
   position: relative;
-  background-color: blue;
+  background: linear-gradient(#00BFA5, #A7FFEB);
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
