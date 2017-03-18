@@ -19,15 +19,6 @@ gulp.task('Csass',function(){
     gulp.src('editor/main.sass')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(gulp.dest('editor/css'));
-    gulp.src('editor/screen50.sass')
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(gulp.dest('editor/css'));
-    gulp.src('editor/screen70.sass')
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(gulp.dest('editor/css'));
-    gulp.src('editor/screen80.sass')
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(gulp.dest('editor/css'));
 });
 
 gulp.task('watch',function() {

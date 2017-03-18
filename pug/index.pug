@@ -7,6 +7,7 @@ head
   )
   link(rel='stylesheet'
        href='./editor/css/main.css'
+       async
   )
 body
   header.frame
@@ -41,10 +42,14 @@ body
     .title
       h1 Portfolio
     #projects_club
-      .project#project1
-      .project#project2
-      .project#project3
-      .project#project4
+      a(href="https://github.com/sankitshane/Neighborhood-Map", target="_blank")
+        .project#project1
+      a(href="https://github.com/sankitshane/CatalogApp", target="_blank")
+        .project#project2
+      a(href="https://github.com/sankitshane/frontend-nanodegree-arcade-game", target="_blank")
+        .project#project3
+      a(href="https://github.com/sankitshane/J2EE-Project", target="_blank")
+        .project#project4
 
   section(style="height:620px").lang
     .title(style="color:black")
