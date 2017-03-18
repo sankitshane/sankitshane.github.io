@@ -7,7 +7,7 @@ head
   )
   link(rel='stylesheet'
        href='./editor/css/main.css'
-       defer
+       async
   )
 body
   header.frame
@@ -95,5 +95,5 @@ body
           .icons.resume
 
 
-  script(src="https://code.jquery.com/jquery-3.2.0.slim.min.js" integrity="sha256-qLAv0kBAihcHZLI3fv3WITKeRsUX27hd6upBBa0MSow=" crossorigin="anonymous")
-  script(src="editor/script.js" async)
+  script(src="https://code.jquery.com/jquery-3.2.0.slim.min.js" integrity="sha256-qLAv0kBAihcHZLI3fv3WITKeRsUX27hd6upBBa0MSow=" crossorigin="anonymous" defer)
+  script(src="editor/script.js" defer)
